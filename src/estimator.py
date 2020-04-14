@@ -7,8 +7,8 @@ data = {"region": {"name": {"Africa"},                             #input detail
                              "avgDailyIncomePopulation": "0.71"
                               },
                     "periodType": "days",     #subject to modification
-                    "timetoElapse": "58",               #subject to change
-                    "reportedCases": "674",              #subject to change
+                    "timetoElapse": "58",
+                    "reportedCases": "674",
                     "population": "66622705",
                     "totalHospitalBeds": "1380614"
                     }
@@ -19,9 +19,9 @@ def estimator(data):
                        "avgDailyIncomeInUSD": input(),
                        "avgDailyIncomePopulation": input(),
 
-            "periodType": input(),  # subject to modification
-            "timetoElapse": input(),  # subject to change
-            "reportedCases": input(),  # subject to change
+            "periodType": input(),
+            "timetoElapse": input(),
+            "reportedCases": input(),
             "population": input(),
             "totalHospitalBeds": input()
             }
@@ -93,7 +93,6 @@ def display():
     pp(estimator(data))
     pp(severityEstimator())
     pp(impactEstimator())
-    exit(1)
 
 if __name__=='__main__':
     display()
